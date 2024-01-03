@@ -5,4 +5,4 @@ This is an assignment as part of the Odin Project to learn recursive algorithms.
 ## Lessons Learned
 
 - Using _.shift()_ to reduce the length of an existing array and fulfill a while loop condition more efficiently than setting a counter.
-- Redefining and extending an array by using the spread operator.
+- Merging arrays by using _.push()._ with the spread operator, which mutates the original array. This is in contrast to methods like _.concat()_, which do not mutate the original array and therefore need to redefine it when called.
