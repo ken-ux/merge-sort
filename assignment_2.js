@@ -26,10 +26,10 @@ function mergeSort(arr) {
 
   // Merge any remaining items still in the split arrays
   if (arrLeft.length > 0 && arrRight.length === 0) {
-    sortedArr = sortedArr.concat(arrLeft); // EQUIVALENT: sortedArr.push(...arrLeft);
+    sortedArr.push(...arrLeft); // EQUIVALENT: sortedArr = sortedArr.concat(arrLeft);
   }
   if (arrRight.length > 0 && arrLeft.length === 0) {
-    sortedArr = sortedArr.concat(arrRight); // EQUIVALENT: sortedArr.push(...arrRight);
+    sortedArr.push(...arrRight); // EQUIVALENT: sortedArr = sortedArr.concat(arrRight);
   }
 
   return sortedArr;
